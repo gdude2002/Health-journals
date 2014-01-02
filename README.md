@@ -17,3 +17,11 @@ A simple Bottle app for keeping track of eating, exercise and sleeping habits on
 
 * Copy `config.example.yml` to `config.yml` and fill it out. It should be fairly self-explanatory.
 * `python run.py`
+
+Notes for the developer
+=======================
+(Also known as: "Shit I need to remember")
+
+Beaker: http://beaker.readthedocs.org/en/latest/
+Bottle-Cork: http://cork.firelet.net/
+Bottle-SQLAlchemy: https://github.com/iurisilvio/bottle-sqlalchemy/wiki
