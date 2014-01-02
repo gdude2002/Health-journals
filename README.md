@@ -11,7 +11,7 @@ A simple Bottle app for keeping track of eating, exercise and sleeping habits on
 * Bottle-Cork
 * Bottle-SQLAlchemy
 * CherryPy
-* SQLAlchemy and one of its (supported dialect connectors)[http://docs.sqlalchemy.org/en/rel_0_9/dialects/index.html]
+* SQLAlchemy and one of its [supported dialect connectors](http://docs.sqlalchemy.org/en/rel_0_9/dialects/index.html)
 
 ### Setting up
 
