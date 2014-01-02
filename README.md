@@ -22,6 +22,6 @@ Notes for the developer
 =======================
 (Also known as: "Shit I need to remember")
 
-Beaker: http://beaker.readthedocs.org/en/latest/
-Bottle-Cork: http://cork.firelet.net/
-Bottle-SQLAlchemy: https://github.com/iurisilvio/bottle-sqlalchemy/wiki
+* Beaker: http://beaker.readthedocs.org/en/latest/
+* Bottle-Cork: http://cork.firelet.net/
+* Bottle-SQLAlchemy: https://github.com/iurisilvio/bottle-sqlalchemy/wiki
