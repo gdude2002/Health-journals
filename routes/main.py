@@ -12,8 +12,10 @@ class Routes(object):
 
     app = None
 
-    def __init__(self, app):
+    def __init__(self, app, manager):
         self.app = app
+        self.manager = manager
+
         app.route("/", [GET, POST], self.index)
         app.route("/api", [GET, POST], self.api_root)
         app.route("/api/", [GET, POST], self.api_root)
