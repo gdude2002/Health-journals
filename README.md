@@ -14,5 +14,8 @@ A simple Bottle app for keeping track of eating, exercise and sleeping habits on
 ### Setting up
 
 * `pip install -r requirements.txt`
-* Copy `config.example.yml` to `config.yml` and fill it out. It should be fairly self-explanatory.
-* `python run.py`
+* If you need to, copy `development.yml.example` to `development.yml` in the `config/` directory and edit it.
+* For development:
+  * `python run.py`
+* For production:
+  * Do yourself a favour and use `uWSGI`.
