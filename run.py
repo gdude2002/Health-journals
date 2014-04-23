@@ -8,10 +8,7 @@ import yaml
 import bottle
 
 from beaker.middleware import SessionMiddleware
-from cork import Cork
-from cork.sqlalchemy_backend import SqlAlchemyBackend
 
-from core.sql import Setup
 from core.routes import Routes
 
 bottle.TEMPLATE_PATH.append("templates")
@@ -27,27 +24,18 @@ fh = open("config/config.yml", "r")
 config = yaml.load(fh)
 fh.close()
 
-db = config["database"]
-db_url = "%s://%s:%s@%s/%s"\
-         % (db["type"], db["username"], db["password"], db["address"],
-            db["database"])
-
 session_opts = {
     'cache.type': 'file',
     'cache.data_dir': 'cache/data',
     'cache.lock_dir': 'cache/lock',
     'session.type': 'ext:database',
-    'session.url': db_url,
+    'session.url': '',  # TODO
     'session.validate_key': True,
 }
 
 app = bottle.default_app()
-sql_setup = Setup(app, db_url)
 
-backend = SqlAlchemyBackend(db_url, "users", "roles", "pending_users")
-cork = Cork(backend=backend, initialize=True)
-
-routes_setup = Routes(app, cork)
+routes_setup = Routes(app)
 
 
 @bottle.hook('before_request')
