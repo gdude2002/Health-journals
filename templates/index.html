@@ -1,9 +1,54 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-</head>
-<body>
+<%inherit file="base.html"/>
+        <div class="container">
+##            <%include file="navbar.html" args="items=nav_items"/>
 
-</body>
-</html>
+            <h1> Welcome! </h1>
+
+            <p> This is the index page. There's nothing here yet. Boop boop be doop. </p>
+
+            <p> Bacon ipsum dolor sit amet meatball minim pork loin, et elit brisket shoulder tenderloin duis fugiat drumstick.
+                Turkey magna enim adipisicing turducken. Id nulla kielbasa ham occaecat tail cupidatat pork tongue in aliqua
+                irure pancetta labore meatball. Ut mollit duis doner ball tip sint beef ribs hamburger fatback drumstick
+                excepteur proident laborum pig. Shoulder ribeye cillum ut tongue. Adipisicing spare ribs capicola, pork chop
+                mollit sint nostrud qui tenderloin nulla strip steak sausage. </p>
+
+            <p> Ut beef in hamburger, exercitation et anim tempor sed reprehenderit andouille consequat leberkas. Shank shoulder
+                biltong, officia ham sausage pancetta nostrud beef ribs magna. Kielbasa chicken sint duis, consectetur bresaola
+                in hamburger tempor andouille ut. Pork loin velit irure non anim flank laboris dolore proident cupidatat incididunt
+                est cow. Minim turkey hamburger ut beef ribs incididunt dolore spare ribs swine deserunt eu. Kielbasa beef doner
+                irure cow, eiusmod minim quis occaecat cillum beef ribs pancetta. Adipisicing turducken filet mignon boudin, aute
+                beef occaecat. </p>
+
+            <p> Fugiat proident short loin chuck. In nulla drumstick sirloin, sausage biltong andouille. Tenderloin minim qui spare
+                ribs nostrud deserunt biltong pork belly pork loin sed eiusmod pastrami. Pork chop porchetta labore, ham hock chicken
+                kielbasa ut nulla proident in ut swine adipisicing hamburger. </p>
+
+            <p> Capicola ut jerky ham, elit ullamco laboris consectetur andouille drumstick. Beef ribs ad bacon enim. Prosciutto est
+                pig beef ribs dolore occaecat pariatur strip steak consequat chuck salami capicola swine. Deserunt veniam ground round
+                biltong kevin meatloaf tenderloin ullamco kielbasa aliqua ut prosciutto tail. Aliquip ham turducken, pork pork belly
+                enim nisi magna biltong beef ribs pastrami. </p>
+
+            <p> Ad ex laborum proident et laboris capicola pork loin mollit velit. Proident sint qui, venison bacon eiusmod kevin brisket
+                swine cillum cow commodo. Laboris prosciutto quis ham, flank tri-tip meatball turducken t-bone fatback ribeye tongue aute.
+                Beef ribs proident salami consectetur shank do. In minim duis ut beef ribs, porchetta enim mollit ham hock biltong
+                adipisicing. Incididunt laboris meatball adipisicing venison pig, capicola do et ut nisi swine duis. </p>
+
+            <div class="row text-center">
+                <img src="http://lorempixel.com/600/500/food/Placeholder image/" alt="Placeholder image" class="img-thumbnail" />
+            </div>
+
+            <div class="row text-center">
+                <hr />
+                <small> Copyright &copy; 2014 <a href="https://github.com/gdude2002/Health-journals">Health Journals team</a> </small> <br />
+                <small> Image copyright &copy; 2014 <a href="http://lorempixel.com">lorempixel.com</a> </small>
+                <hr />
+            </div>
+
+        </div>
+
+<%block name="title">Health | Index</%block>
+##<%block name="header">
+##% for item in headers:
+##    ${item}
+##% endfor
+##</%block>

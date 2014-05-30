@@ -1,0 +1,16 @@
+beaker:  # For sessions
+  adapter: mysql+pymysql
+  username: ultros
+  password: pass
+  host: localhost
+  database: ultros
+  socket: off  # Set this to the path of a unix socket if you're using it
+mongo:  # For data
+  default: yes  # Set this to `no` if you need to do manual configuration (as below)
+                # This defaults to localhost with no authentication, and the "health" database
+#  host: localhost
+#  port: 27017
+#  db: health
+#  authentication:
+#    username: user
+#    password: pass
